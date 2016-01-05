@@ -62,8 +62,7 @@ module.exports = _.merge({
              * You should update this section with some test input for testing your module
              */
             input: {
-                //Replace VAR1 with the name of an expected input, and add more inputs as needed.
-                VAR1: 'foo'
+                longUrl: 'http://blog.bitly.com/post/26449494972/happy-independence-day-america'
             }
         }
     }

@@ -2,25 +2,58 @@
  * Metadata describing the module operation
  */
 {
-    //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "longUrl",
+            "title": "URL"
+        },
+        {
+            "id": "title",
+            "title": "Title"
+        },
+        {
+            "id": "note",
+            "title": "Note"
+        },
+        {
+            "id": "private",
+            "title": "Private?"
+        },
+        {
+            "id": "user_ts",
+            "title": "Timestamp"
+        },
+        {
+            "id": "domain",
+            "title": "Domain"
+        },
+        {
+            "id": "deeplinks",
+            "title": "Deeplinks"
         }
-        */
     ],
-    //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "link",
+            "title": "Bitlink"
+        },
+        {
+            "id": "aggregate_link",
+            "title": "Aggregate Bitlink"
+        },
+        {
+            "id": "new_link",
+            "title": "New Link?"
+        },
+        {
+            "id": "long_url",
+            "title": "Long URL"
+        },
+        {
+            "id": "deeplinks",
+            "title": "Deeplinks"
         }
-      */
     ],
-    "title": "Bitly: Save Link" /* Required.A display name for the module */
+    "icon": "dex-bitly",
+    "title": "Bitly: Save Link"
 }
