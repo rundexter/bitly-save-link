@@ -31,7 +31,7 @@ module.exports = {
     run: function(step, dexter) {
         var inputs = util.pickInputs(step, pickInputs),
             validateErrors = util.checkValidateErrors(inputs, pickInputs),
-            token = dexter.environment('bitly_access_token'),
+            token = dexter.provider('bitly').credentials('access_token'),
             api = '/v3/user/link_save';
 
         if (!token)
@@ -44,7 +44,7 @@ module.exports = {
         request.get({uri: api, qs: inputs, json: true}, function (error, response, body) {
             if (error)
                 this.fail(error);
-            else if (body && body.status_code !== 200)
+            else if (body && body.status_code !== 200 && body.status_code !== 304)
                 this.fail(body);
             else
                 this.complete(util.pickOutputs(body, pickOutputs));

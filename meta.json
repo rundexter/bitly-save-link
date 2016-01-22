@@ -54,6 +54,9 @@
             "title": "Deeplinks"
         }
     ],
+    "providers": [{
+        "name": "bitly"
+    }],
     "icon": "dex-bitly",
     "title": "Bitly: Save Link"
 }
