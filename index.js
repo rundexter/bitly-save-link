@@ -34,9 +34,6 @@ module.exports = {
             token = dexter.provider('bitly').credentials('access_token'),
             api = '/v3/user/link_save';
 
-        if (!token)
-            return this.fail('A [bitly_access_token] environment variable is required for this module');
-
         if (validateErrors)
             return this.fail(validateErrors);
 
