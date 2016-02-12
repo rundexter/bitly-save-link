@@ -1,13 +1,17 @@
 {
-  "name": "bitly-save-link",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "author": "Alexander",
-  "license": "ISC",
-  "private": true,
-  "dependencies": {
-    "lodash": "^3.10.1",
-    "request": "^2.67.0"
-  }
+   "name": "bitly-save-link",
+   "version": "0.0.1",
+   "description": "Saves a long URL as a Bitlink in a user's history, with optional pre-set metadata",
+   "main": "index.js",
+   "author": "Run Dexter, Inc",
+   "license": "MIT",
+   "private": true,
+   "dependencies": {
+      "lodash": "^3.10.1",
+      "request": "^2.67.0"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/rundexter/bitly-save-link"
+   }
 }
